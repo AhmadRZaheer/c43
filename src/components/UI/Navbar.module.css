@@ -1,0 +1,33 @@
+.navbar {
+    width: 100%;
+    height: 80px;
+}
+
+.hoverbefore {
+    position: absolute;
+    margin-left: 15px;
+    margin-top: 10px;
+    transition: all 0.3s ease-in;
+}
+.afterhover{
+    float: left;
+    position: absolute;
+    opacity: 0;
+    margin-left: 15px;
+    margin-top: 10px;
+    transition: all 0.3s ease-in;
+}
+.afterhover:hover {
+    opacity: 1;
+    transition: all 0.3s ease-in;
+}
+
+.hoverbefore:hover {
+    opacity: 0;
+}
+
+.logo {
+    float: right;
+    margin-top: 10px;
+    margin-right: 15px;
+}
