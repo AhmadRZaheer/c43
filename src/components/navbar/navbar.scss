@@ -1,0 +1,26 @@
+.after-hover{
+    float: left;
+    position: absolute;
+    opacity: 0;
+
+}
+.after-hover:hover {
+    opacity: 1;
+    transition: all 0.3s ease-in-out;
+    animation-direction: reverse;
+}
+
+.before-hover {
+    float: left;
+    position: absolute;
+    margin-left: 14px;
+    margin-top: 15px;
+}
+.before-hover::hover {
+    opacity: 0;
+}
+.logo {
+    float: right;
+    position: relative;
+    margin: 10px 15px 15px 10px;
+}
