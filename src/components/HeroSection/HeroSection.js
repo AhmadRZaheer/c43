@@ -2,6 +2,8 @@ import React from 'react'
 import Wrapper from '../Helpers/Wrapper'
 import classes from './HeroSection.module.css';
 import Animation from './Animation';
+import Arrow from '../../assets/arrow.png';
+import {motion} from 'framer-motion'
 
 const HeroSection = (props) => {
     return (
@@ -15,6 +17,12 @@ const HeroSection = (props) => {
                     Marketing Solutions for Disruptors.</p>
                 </div>
             </div>
+            <motion.img 
+                className={classes.arrow} 
+                src={Arrow} alt="Arrow"
+                transition={{delay: 3, type: 'spring'}} 
+                initial={{y: -60, opacity: 0}} 
+                animate={{y: 0, opacity: 1}} />
         </Wrapper>
     )
 }
