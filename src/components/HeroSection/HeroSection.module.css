@@ -8,10 +8,13 @@
 }
 
 .imgobj {
+    position: absolute;
     width: 600px;
     height: 600px;
     display: block;
     margin: 0 auto;
+    left: 0;
+    right: 0;
 }
 
 .container {

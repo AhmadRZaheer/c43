@@ -13,6 +13,19 @@ const HeroSection = (props) => {
                     animate={{x: -200, y: -50, scale: 0.8}} 
                     className={classes.imgobj} 
                     src={Object} alt="Object" />
+                
+                <motion.img 
+                    transition={{ type: 'spring', stiffness: 10,delay: 1}} 
+                    animate={{x: -200, y: -50, scale: 0.8}} 
+                    className={classes.imgobj} 
+                    src={Object} alt="Object" />
+                
+                <motion.img 
+                    transition={{ type: 'spring', stiffness: 10,delay: 1}} 
+                    animate={{x: -200, y: -50, scale: 0.8}} 
+                    className={classes.imgobj} 
+                    src={Object} alt="Object" />
+                
             </div>
             <div className={classes.container}>
                 <div className={classes.hero_text}>
