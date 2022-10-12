@@ -9,7 +9,7 @@ import { motion } from 'framer-motion';
 const Animation = (props) => {
   return (
     <Wrapper>
-      <div className={classes.bg_overlay}>
+        <div className={classes.bg_overlay}>
                 <motion.img
                     initial={{opacity: 0}} 
                     transition={{ type: 'spring', stiffness: 10,delay: 1}} 
@@ -37,8 +37,7 @@ const Animation = (props) => {
                     initial={{opacity: 0}}
                     transition={{delay:2.8, ease: 'easeIn'}}
                     animate={{opacity:1}}  />
-                
-            </div>
+        </div>
     </Wrapper>
   )
 }
