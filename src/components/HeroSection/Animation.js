@@ -5,7 +5,6 @@ import Object from '../../assets/object.png';
 import C from '../../assets/c.png';
 import { motion } from 'framer-motion';
 
-
 const Animation = (props) => {
   return (
     <Wrapper>
