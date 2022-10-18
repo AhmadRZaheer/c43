@@ -41,4 +41,4 @@ const Animation = (props) => {
     )
 }
 
-export default Animation
+export default Animation;
