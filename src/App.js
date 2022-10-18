@@ -1,13 +1,11 @@
 import './App.css';
 import Wrapper from './components/Helpers/Wrapper';
-import HeroSection from './components/HeroSection/HeroSection';
-import Navbar from './components/UI/Navbar';
+import Home from './components/Home/Home'
 
 const App = () => {
   return (
     <Wrapper>
-      <Navbar />
-      <HeroSection />
+      <Home />
     </Wrapper>
   );
 }
