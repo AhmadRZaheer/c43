@@ -7,4 +7,5 @@ body {
     background-color: #1b1b1b;
     font-family: 'Outfit', sans-serif;
     height: 100vh;
+    overflow-x: hidden;
 }
