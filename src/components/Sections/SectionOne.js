@@ -49,7 +49,7 @@ const SectionOne = (props) => {
         }
       })
     }
-  }, [inView]);
+  }, [inView, textanimation, imganimation]);
 
   return (
     <Wrapper>
