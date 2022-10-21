@@ -13,20 +13,24 @@ const SectionOne = (props) => {
   });
   const textAnimation = useAnimation();
   const imgAnimation = useAnimation();
-  const sndImgAnimation = useAnimation()
+  const sndImgAnimation = useAnimation();
+  const arrows = useAnimation();
 
 
   useEffect(() => {
     if(!inView) {
       textAnimation.start({
-        x:0, opacity: 0 
+        x:0, opacity: 0, transition:{
+          type: 'spring',
+          bounce: 0
+        } 
       })
 
       imgAnimation.start({
         x:0,
         transition:{
           type: 'spring',
-          stiffness:50
+          bounce:0
         }
       })
 
@@ -38,6 +42,11 @@ const SectionOne = (props) => {
         }
       })
 
+      arrows.start({
+        x: '-100vw',
+        opacity: 0
+      })
+
     }
     if (inView) {
       textAnimation.start({
@@ -45,7 +54,7 @@ const SectionOne = (props) => {
         opacity:1,
         transition:{
           type: 'spring',
-          bounce: 0.3,
+          bounce: 0,
           delay: 1.25
         }
       })
@@ -55,7 +64,7 @@ const SectionOne = (props) => {
         transition:{
           type: 'spring',
           delay: 1,
-          bounce: 0.3
+          bounce: 0
         }
       })
 
@@ -63,14 +72,24 @@ const SectionOne = (props) => {
         x: 0,
         transition:{
           type: 'spring',
-          delay:1.25,
-          bounce: 0.3,
+          delay:1.75,
+          bounce: 0
+        }
+      })
+
+      arrows.start({
+        x: 0,
+        opacity: 1,
+        transition: {
+          type: 'spring',
+          bounce: 0,
+          delay: 1.25
         }
       })
 
     }
 
-  }, [inView, textAnimation, imgAnimation, sndImgAnimation]);
+  }, [inView, textAnimation, imgAnimation, sndImgAnimation, arrows]);
 
   return (
     <Wrapper>
@@ -88,7 +107,7 @@ const SectionOne = (props) => {
             className={classes.img} />
           
           <motion.img animate={sndImgAnimation} className={classes.img_second} src={Object} alt="Object" />
-          <motion.img className={classes.arrows} src={Arrows} alt='Arrows'/>
+          <motion.img animate={arrows} className={classes.arrows} src={Arrows} alt='Arrows'/>
         </div>
       </div>
     </Wrapper>

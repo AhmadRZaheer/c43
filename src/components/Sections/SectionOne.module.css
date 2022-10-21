@@ -39,6 +39,7 @@
     width: 300px;
     position: absolute;
     bottom: 0;
+    filter: blur(4px);
 }
 
 .arrows {
