@@ -13,8 +13,6 @@ const SectionTwo = (props) => {
   const textAnimation = useAnimation();
   const btnAnimation = useAnimation();
 
-  const onMouseOver = 'Lets Talk';
-
   useEffect(() => {
     if (!inView) {
       textAnimation.start({
@@ -59,8 +57,11 @@ const SectionTwo = (props) => {
 
   return (
     <Wrapper>
-      <div ref={ref} className={classes.container}>
-        <motion.h1 animate={textAnimation} className={classes.heading}>Trust is hard earned commodity, and
+      <div ref={ref} className={classes.container}>  
+        <motion.h1 
+          animate={textAnimation} 
+          className={classes.heading}>
+          Trust is hard earned commodity, and
             we earns yours through results.
         </motion.h1>
         <motion.button whileHover={{
