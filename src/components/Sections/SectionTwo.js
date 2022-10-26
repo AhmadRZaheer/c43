@@ -17,4 +17,4 @@ const SectionTwo = (props) => {
   )
 }
 
-export default SectionTwo
+export default SectionTwo;
