@@ -7,11 +7,10 @@ import { useInView } from 'react-intersection-observer';
 const SectionThree = (props) => {
 
   const {ref, inView} = useInView({
-    threshold: 0
+    threshold: 0.3
   })
 
   const outerCircle = useAnimation();
-  const innerCircle = useAnimation();
 
   useEffect(() => {
     if (!inView) {
@@ -21,17 +20,26 @@ const SectionThree = (props) => {
           type: 'spring',
           bounce: 0
         }
+        
       })
     }
+
+    if (inView) {
+      outerCircle.start({
+        opacity: 1,
+        transition: {
+          type: 'spring',
+          bounce: 0
+        }
+      })
+    }
+
   })
 
   return (
     <Wrapper>
       <div ref={ref}>
-        <motion.div className={classes.outercircle}>
-            <motion.div className={classes.innercircle}>
-                
-            </motion.div>
+        <motion.div animate={outerCircle} className={classes.outercircle}>
         </motion.div>
       </div>
     </Wrapper>
