@@ -4,6 +4,8 @@ import SectionOne from './SectionOne'
 import SectionTwo from './SectionTwo'
 import SectionThree from './SectionThree'
 import SectionFour from './SectionFour'
+import SectionFive from './SectionFive'
+import SectionSix from './SectionSix'
 
 const Section = (props) => {
   return (
@@ -12,6 +14,8 @@ const Section = (props) => {
         <SectionTwo />
         <SectionThree/>
         <SectionFour />
+        <SectionFive />
+        <SectionSix />
     </Wrapper>
   )
 }

@@ -1,0 +1,34 @@
+.container {
+    width: 100%;
+    height: 1600px;
+    position: relative;
+    margin-top: 200px;
+}
+
+.text,
+.imgOverlay {
+    position: absolute;
+    width: 100%;
+    height: 1600px;
+}
+
+.imgOverlay img {
+    position: absolute;
+    z-index: -1;
+}
+
+.imgOne {
+    right: -250px;
+    width: 1250px;
+}
+
+.text h1 {
+    font-family: 'Outfit';
+    font-weight: 700;
+    font-size: 400px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    color: white;
+    opacity: 0.05;
+}

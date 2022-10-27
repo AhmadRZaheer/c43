@@ -40,6 +40,7 @@ const SectionThree = (props) => {
     <Wrapper>
       <div ref={ref}>
         <motion.div animate={outerCircle} className={classes.outercircle}>
+          <h1>Have nothing to put here atm.</h1>
         </motion.div>
       </div>
     </Wrapper>
