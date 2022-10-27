@@ -9,7 +9,7 @@ import { useInView } from 'react-intersection-observer';
 const SectionFour = () => {
 
     const {ref, inView} = useInView({
-        threshold: 0.8
+        threshold: 0.6
     })
 
     const txtAnimation = useAnimation();
